@@ -1,102 +1,28 @@
-@font-face {
-    font-family: 'JetBrainsMono';
-    src: url('JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-SemiBold.ttf') format('truetype');
-    font-weight: 400;
-    font-style: normal;
-}
-
-/* Global Reset & Base */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #212125;
-}
-
-header{
-    display: grid;
-    background-color: transparent;
-    grid-template-columns: 1fr auto 1fr;
-    justify-content: center; /* Centers horizontally inside */
-    align-items: center;
+body{
     padding: 0%;
-    font-size: 100%;
+    margin: 0%;
 }
-
-.nav-links{
-    background-color: transparent;
-    grid-column: 2;
+header{
     display: flex;
-    gap: 24px;
+    align-items: center;
+    background-color: red;
+}
+nav{
+    display: flex;
+    margin: auto;
+    gap: 32px;
+    background-color: aqua;
 }
 
-.nav-links a{
-    text-decoration: none;
-    font-family: 'Plus Jakarta Sans', sans-serif;
-    color: white;
+.iceCream{
+    width: 6vw;
+    height: 6vw;
+    margin: 2%;
+    background-color: black;
 }
 
-a:hover{
-    opacity: 0.8;
-    transform: translateY(-5px);
-    
-}
-
-.logo{
-    background-color: transparent;
-    height: 100px;
-    width: 200px;
-    margin-left: 3%;
-}
-
-.logo img{
+.iceCream img{
     width: 100%;
     height: 100%;
-    margin-top: 10%;
 }
 
-
-.hero{
-    display: grid;
-    background-color: transparent;
-    text-align: center;
-    color: #FFF4E8;
-    place-content: center;
-    text-align: center;
-    height: 60vh;
-}
-
-.hero h1{
-    font-family: 'Aguafina Script', cursive;
-    font-size: 10vw;
-}
-
-.hero p{
-    font-family: 'JetBrainsMono', monospace;
-    font-size: 2vw;
-}
-
-.hero-cta{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 32px;
-}
-
-.btn{
-    padding: 10px;
-    background-color: white;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 4px 3px red;
-}
-
-.btn a{
-    text-decoration: none;
-    color: black;
-}
