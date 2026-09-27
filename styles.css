@@ -115,3 +115,16 @@ header{
 .project-card a:hover{
     transform: translateY(-5px);
 }
+
+.hero-p{
+    color:black;
+    margin-top: 5vw;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+footer{
+    text-align: center;
+    transform: translateY(4rem);
+    font-size: 10px;
+}
