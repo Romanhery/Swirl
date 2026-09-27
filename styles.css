@@ -1,28 +1,117 @@
-body{
-    padding: 0%;
-    margin: 0%;
+@font-face {
+    font-family: 'JetBrainsMono';
+    src: url('JetBrainsMono-2.304/fonts/ttf/JetBrainsMono-SemiBold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #c2f2d0;
 }
 header{
-    display: flex;
+    display: grid;
+    background-color: transparent;
+    grid-template-columns: 1fr auto 1fr;
+    justify-content: center; /* Centers horizontally inside */
     align-items: center;
-    background-color: red;
+    padding: 0%;
 }
-nav{
+
+.nav-links{
+    background-color: transparent;
+    grid-column: 2;
     display: flex;
+    gap: 24px;
+}
+
+.nav-links a{
+    text-decoration: none;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: 	#b77825;
+}
+
+.nav-a:hover{
+    opacity: 0.8;
+    transform: translateY(-5px);
+}
+
+.logo{
+    background-color: transparent;
+    height: 100px;
+    width: 200px;
+    margin-left: 10%;
+}
+
+.logo img{
+    margin-top: 10%;
+    width: 70%;
+    height: 70%;
+}
+
+.hero{
+    display: grid;
+    background-color: transparent;
+    text-align: center;
+    color: #FFF4E8;
+    place-content: center;
+    text-align: center;
+    height: 60vh;
+}
+
+.hero h1{
+    font-family: 'Aguafina Script', cursive;
+    font-size: 6vw;
+    color:#6b3e26;
+}
+
+.hero p{
+    font-family: 'JetBrainsMono', monospace;
+}
+
+.projects {
+    width: 95%;
+    min-height: 70vh;
     margin: auto;
-    gap: 32px;
-    background-color: aqua;
+    padding: 40px;
+
+    /* Responsive CSS Grid */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 24px;
+    align-content: start; /* Prevents cards from stretching vertically */
 }
 
-.iceCream{
-    width: 6vw;
-    height: 6vw;
-    margin: 2%;
-    background-color: black;
-}
-
-.iceCream img{
+.project-card {
+    background-color: 	#6b3e26;
     width: 100%;
-    height: 100%;
+    padding: 16px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
+.project-card img {
+    width: 100%;
+    aspect-ratio: 1 / 1; /* Keeps image square */
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.project-card a{
+    text-decoration: none;
+    text-align: center;
+    font-family: 'JetBrainsMono', monospace;
+    color: bisque;
+}
+
+.project-card a:hover{
+    transform: translateY(-5px);
+}
